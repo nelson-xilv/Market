@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="@string/search"
+        android:id="@+id/searchMainToolBar"
+        android:icon="@drawable/ic_search_tb"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="1"
+        />
+
+    <item
+        android:title="@string/buy"
+        android:id="@+id/buyMainToolBar"
+        android:icon="@drawable/ic_shopping_tb"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="2"
+        />
+</menu>
