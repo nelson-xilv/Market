@@ -2,4 +2,10 @@
     <string name="app_name">Market</string>
     <string name="buy">Buy</string>
     <string name="search">Search</string>
+    <string name="new_arrivals">New arrivals</string>
+    <string name="discover">Discover</string>
+    <string name="book">Book</string>
+    <string name="cart">Cart</string>
+    <string name="favourites">Favourites</string>
+    <string name="settings">Settings</string>
 </resources>
