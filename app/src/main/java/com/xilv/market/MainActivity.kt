@@ -1,17 +1,16 @@
 package com.xilv.market
 
-import android.graphics.Color
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
-import android.view.Window
-import android.widget.Toolbar
 import com.xilv.market.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityMainBinding
 
+    @SuppressLint("RestrictedApi")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -19,6 +18,9 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
         supportActionBar?.setDisplayShowTitleEnabled(false)
+        supportActionBar?.setDefaultDisplayHomeAsUpEnabled(true)
+
+        binding.toolbar.setNavigationIcon(R.drawable.profile_picture)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
